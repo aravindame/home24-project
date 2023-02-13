@@ -1,0 +1,29 @@
+.header {
+  grid-area: header;
+  background-color: #00bfff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header strong {
+  font-size: 22px;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header input {
+  float: right;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+.logo {
+  color: #fff;
+  font-size: x-large;
+  font-weight: 800;
+}

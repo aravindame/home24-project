@@ -1,0 +1,42 @@
+.articles {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #fff5ee;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.article > * {
+  display: block;
+  padding: 5px 0;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.article > img {
+  height: 300px;
+}
+
+.article > button {
+  padding: 10px 20px;
+  background-color: lightgoldenrodyellow;
+  border: 1px solid lightgray;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}

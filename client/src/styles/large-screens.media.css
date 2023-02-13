@@ -1,0 +1,10 @@
+/* Large Screen Sizes*/
+@media (min-width: 2500px) {
+  .articles {
+    grid-template-columns: repeat(8, minmax(250px, 1fr));
+  }
+
+  .article {
+    max-width: 350px;
+  }
+}

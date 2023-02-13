@@ -1,0 +1,59 @@
+/* Mobile landscape */
+@media (min-width: 280px) and (max-width: 767px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'content'
+      'footer';
+    position: relative;
+  }
+
+  .header {
+    height: 100px;
+    display: block;
+  }
+  .logo {
+    text-align: center;
+    display: block;
+    margin-top: 5px;
+  }
+
+  .show-btn {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    left: 200px;
+  }
+
+  .burger-icon {
+    display: block;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .hide-btn {
+    visibility: hidden;
+    transition: 0.2s;
+  }
+
+  .header input {
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .sidebar {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 200px;
+    transition: 0.2s;
+  }
+
+  .content {
+    width: 100%;
+  }
+}

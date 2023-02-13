@@ -1,0 +1,30 @@
+{
+  "verbose": true,
+  "transform": {
+    "^.+\\.tsx?$": "ts-jest",
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+    ".+\\.(css|styl|less|sass|scss)$": "jest-css-modules-transform"
+  },
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+  "testPathIgnorePatterns": ["<rootDir>[/\\\\](dist|coverage|node_modules)[/\\\\]", "_\\w*.\\w+$"],
+  "testEnvironment": "jsdom",
+  "moduleFileExtensions": ["ts", "tsx", "js"],
+  "collectCoverageFrom": [
+    "src/components/**/*.tsx",
+    "!src/index.ts",
+    "!src/App.ts",
+    "!src/graphql/*.ts",
+    "!src/store/*.ts",
+    "!src/types/*.ts"
+  ],
+  "coverageThreshold": {
+    "global": {
+      "branches": 80,
+      "functions": 80,
+      "lines": 80,
+      "statements": 80
+    }
+  },
+  "coverageReporters": ["html", "text"],
+  "setupFilesAfterEnv": ["<rootDir>/src/test.setup.ts"]
+}

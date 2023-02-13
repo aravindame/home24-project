@@ -1,0 +1,33 @@
+/* Mobile portrait */
+@media only screen and (max-width: 767px) {
+  .page {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'content'
+      'footer';
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header input {
+    float: none;
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .content {
+    grid-column: span 1;
+  }
+
+  .sidebar {
+    padding: 10px;
+    order: -1;
+  }
+
+  .content {
+    width: 100%;
+  }
+}
