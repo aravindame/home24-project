@@ -3,7 +3,7 @@
 
 This is an E-Commerce application developed for selling furniture products. The application utilizes the Apollo Client Cache as a state management tool instead of traditional tools like Redux. This choice offers several advantages, as the Apollo Client provides a comprehensive solution for managing the state of a full-fledged application.
 
-##Objectives
+## Objectives
 
 The following objectives have been identified for the project:
 
